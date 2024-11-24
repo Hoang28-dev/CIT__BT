@@ -24,13 +24,13 @@
     </style>
   </head>
   <body>
-    <form >
+    <form action="./id.html" method="post" target="_blank">
         <label for="ten">Họ và tên: </label> <br />
-        <input type="text" name="ten" id="ten" /><br />
+        <input type="text" name="ten" id="ten" placeholder="Nhập họ và tên"/><br />
         <label for="email">Email: </label><br />
         <input type="email" name="email" id="email" /><br />
         <label for="mk">Mật Khẩu: </label><br />
-        <input type="password" name="mk" id="mk" /><br />
+        <input type="password" name="mk" id="mk" minlength="8" /><br />
         <label for="ns">Ngày sinh: </label><br />
         <input type="date" name="ns" id="ns" /><br />
         <input type="radio" name="gt-nam" id="gt-nam" value="Nam" />
@@ -45,8 +45,10 @@
         <input type="checkbox" name="st" id="st" />
         <label for="st">Nghe nhạc</label><br />
         <label for="img">Ảnh: </label>
-        <input type="file" name="img" id="img" /><br />
-        <input type="button" name="" id="" value="Submit" />
+        <input type="file" name="img" id="img" accept="img"/><br />
+        <input type="submit" name="" id="" value="Submit" />
     </form>
+   
+        
   </body>
 </html>
